@@ -1397,6 +1397,7 @@ class mainCog(commands.Cog):
 	async def menu_(self, ctx):
 		if ctx.message.channel.id == basicSetting[7]:
 			command_list = ''
+			command_list += '\n오류문의 : https://open.kakao.com/me/RANYBOT\n'
 			command_list += ','.join(command[2]) + '\n'     #!설정확인
 			command_list += ','.join(command[3]) + '\n'     #!채널확인
 			command_list += ','.join(command[4]) + ' [채널명]\n'     #!채널이동
@@ -2465,7 +2466,7 @@ class mainCog(commands.Cog):
 					boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "----- 보스탐 정보 -----",
+						title = "----------------- 보스탐 정보 -----------------\n                            vv오류문의vv\n https://open.kakao.com/me/RANYBOT",
 						description= boss_information[0],
 						color=0x0000ff
 						)
