@@ -1397,7 +1397,6 @@ class mainCog(commands.Cog):
 	async def menu_(self, ctx):
 		if ctx.message.channel.id == basicSetting[7]:
 			command_list = ''
-			command_list += '\n오류문의 : https://open.kakao.com/me/RANYBOT\n'
 			command_list += ','.join(command[2]) + '\n'     #!설정확인
 			command_list += ','.join(command[3]) + '\n'     #!채널확인
 			command_list += ','.join(command[4]) + ' [채널명]\n'     #!채널이동
@@ -1449,12 +1448,12 @@ class mainCog(commands.Cog):
 			command_list += '[보스명]삭제\n'     
 			command_list += '[보스명]메모 [할말]\n'
 			embed = discord.Embed(
-					title = "----- 명령어 -----",
+					title = "----------------- 보스탐 정보 -----------------\n                            vv오류문의vv\n https://open.kakao.com/me/RANYBOT",
 					description= '```' + command_list + '```',
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- 추가기능 -----",
+					name="----------------- 추가 기능 -----------------",
 					value= '```- [보스명]컷/멍/예상  [할말] : 보스시간 입력 후 빈칸 두번!! 메모 가능\n- [보스명]컷 명령어는 초성으로 입력가능합니다.\n  ex)' + bossData[0][0] + '컷 => ' + convertToInitialLetters(bossData[0][0] +'컷') + ', ' + bossData[0][0] + ' 컷 => ' + convertToInitialLetters(bossData[0][0] +' 컷') + '```'
 					)
 			await ctx.send( embed=embed, tts=False)
