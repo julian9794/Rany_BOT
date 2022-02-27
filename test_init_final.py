@@ -1448,7 +1448,7 @@ class mainCog(commands.Cog):
 			command_list += '[보스명]삭제\n'     
 			command_list += '[보스명]메모 [할말]\n'
 			embed = discord.Embed(
-					title = "----------------- 보스탐 정보 -----------------\n                            vv오류문의vv\n https://open.kakao.com/me/RANYBOT",
+					title = "----------------- 보스탐 정보 -----------------\n                            vv오류문의vv \n https://open.kakao.com/me/RANYBOT",
 					description= '```' + command_list + '```',
 					color=0xff00ff
 					)
