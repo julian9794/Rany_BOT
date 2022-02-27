@@ -2448,7 +2448,7 @@ class mainCog(commands.Cog):
 					tmp_boss_information[0] = '``` ```'
 
 				embed = discord.Embed(
-						title = "----- 보스탐 정보 -----",
+						title = "------------------ 보스탐 정보 -----------------\n                            vv오류문의vv\n https://open.kakao.com/me/RANYBOT",
 						description= boss_information[0],
 						color=0x0000ff
 						)
